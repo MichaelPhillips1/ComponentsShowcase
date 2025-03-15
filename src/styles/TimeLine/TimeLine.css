@@ -1,0 +1,52 @@
+.TimeLineWrapper{
+    width: 90%;
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    background-color: rgb(20, 20, 20);
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.TimeLineColumnWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.TimeLineButtonWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.TimeLineQuestion{
+    color: white;
+    text-align: center;
+    padding: 0px;
+    margin: 5px;
+}
+
+.TimeLineButton{
+    width: 30%;
+    height: 20px;
+}
+
+.TimeLinePipeLine {
+    margin-top: 5%;
+    width: 5px;
+    height: 80%;
+    justify-self: center;
+    margin-bottom: 5%;
+    background-image: linear-gradient(blue 50%, transparent 55%);
+    background-size: 100% 200%;
+    background-position: 0% 100%;
+    transition: all 1s ease-in-out;
+}

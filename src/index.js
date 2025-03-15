@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './styles/ShowCase.css';
+import ShowcaseGrid from './js/ShowcaseGrid';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <p>test</p>
+    <ShowcaseGrid />
   </React.StrictMode>
 );

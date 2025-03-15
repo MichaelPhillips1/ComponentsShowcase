@@ -1,0 +1,45 @@
+.TodoListItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(50, 50, 50);
+
+    width: 90%;
+    height: 50px !important;
+    min-height: 50px;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 10px;
+}
+
+.TodoListItemName{
+    text-align: center;
+    overflow-x: scroll !important;
+    width: 47.5%;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-right: 2.5% !important;
+}
+
+.TodoOptionSelect{
+    height: 50%;
+    width: 22.5%;
+    margin-right: 2.5%;
+    border-radius: 5px;
+    height: 75%;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(70, 70, 70);
+}
+
+.TodoListItemRemove{
+    height: 75%;
+    color: white;
+    background-color: rgb(70, 70, 70);
+    border-radius: 10px;
+}
