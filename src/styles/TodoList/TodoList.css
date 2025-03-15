@@ -1,6 +1,6 @@
 .TodoHeaderBar{
     width: 85%;
-    height: 12.5;
+    height: 12.5%;
 
     display: flex;
     flex-direction: row;
@@ -36,6 +36,10 @@
     border-bottom-right-radius: 10px;
     color: white;
     background-color: rgb(70, 70, 70);
+}
+
+.TodoListHeaderSubmit:hover{
+    background-color: rgb(90, 90, 90);
 }
 
 .TodoBody{

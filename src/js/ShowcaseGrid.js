@@ -9,6 +9,9 @@ function ShowcaseGrid() {
         <div className="ShowcaseGridBlock">
             <TimeLine />
         </div>
+         <div className="ShowcaseGridBlock">
+            
+        </div>
     </div>
 }
 

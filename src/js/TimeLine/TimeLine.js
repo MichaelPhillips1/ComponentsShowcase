@@ -26,38 +26,50 @@ function TimeLine() {
             <div className="TimeLineWrapper">
                 <div className="TimeLineColumnWrapper">
                     <div className="TimeLinePipeLine" id="TimeLineSegment"></div>
-                    <button onClick={() => resetTimeline()}>Reset</button>
+                    <button className="TimeLineButton" onClick={() => resetTimeline()}>Reset</button>
                 </div>
                 <div className="TimeLineColumnWrapper">
-                    <p className="TimeLineQuestion">Are you over the age of 18?</p>
-                    <div className="TimeLineButtonWrapper">
-                    <button className="TimeLineButton" onClick={() => incrementQuestion(0)} >Yes</button>
-                    <button className="TimeLineButton" onClick={() => incrementQuestion(0)} >No</button>
+                    <div className={timeLineOffset >= 0 ? "" : "DisabledQuestionSegment"}>
+                        <p className="TimeLineQuestion">Are you over the age of 18?</p>
+                        <div className="TimeLineButtonWrapper">
+                            <button className="TimeLineButton" onClick={() => incrementQuestion(0)} >Yes</button>
+                            <button className="TimeLineButton" onClick={() => incrementQuestion(0)} >No</button>
+                        </div>
                     </div>
-                    <p className="TimeLineQuestion">Will you require VISA sponsorship?</p>
-                     <div className="TimeLineButtonWrapper">
-                    <button className="TimeLineButton" onClick={() => incrementQuestion(1)} >Yes</button>
-                    <button className="TimeLineButton" onClick={() => incrementQuestion(1)} >No</button>
+                    <div className={timeLineOffset >= 1 ? "" : "DisabledQuestionSegment"}>
+                        <p className="TimeLineQuestion">Will you require VISA sponsorship?</p>
+                        <div className="TimeLineButtonWrapper">
+                            <button className="TimeLineButton" onClick={() => incrementQuestion(1)} >Yes</button>
+                            <button className="TimeLineButton" onClick={() => incrementQuestion(1)} >No</button>
+                        </div>
                     </div>
-                    <p className="TimeLineQuestion">Will you need relocation assistance?</p>
-                     <div className="TimeLineButtonWrapper">
-                    <button className="TimeLineButton" onClick={() => incrementQuestion(2)} >Yes</button>
-                    <button className="TimeLineButton" onClick={() => incrementQuestion(2)} >No</button>
+                    <div className={timeLineOffset >= 2 ? "" : "DisabledQuestionSegment"}>
+                        <p className="TimeLineQuestion">Will you need relocation assistance?</p>
+                        <div className="TimeLineButtonWrapper">
+                            <button className="TimeLineButton" onClick={() => incrementQuestion(2)} >Yes</button>
+                            <button className="TimeLineButton" onClick={() => incrementQuestion(2)} >No</button>
+                        </div>
                     </div>
-                    <p className="TimeLineQuestion">Are you comfortable being in office 2-3 times per week?</p>
-                     <div className="TimeLineButtonWrapper">
-                    <button className="TimeLineButton" onClick={() => incrementQuestion(3)} >Yes</button>
-                    <button className="TimeLineButton" onClick={() => incrementQuestion(3)} >No</button>
+                    <div className={timeLineOffset >= 3 ? "" : "DisabledQuestionSegment"}>
+                        <p className="TimeLineQuestion">Are you comfortable being in office 2-3 times per week?</p>
+                        <div className="TimeLineButtonWrapper">
+                            <button className="TimeLineButton" onClick={() => incrementQuestion(3)} >Yes</button>
+                            <button className="TimeLineButton" onClick={() => incrementQuestion(3)} >No</button>
+                        </div>
                     </div>
-                    <p className="TimeLineQuestion">Are you or have you ever been a government official?</p>
-                     <div className="TimeLineButtonWrapper">
-                    <button className="TimeLineButton" onClick={() => incrementQuestion(4)} >Yes</button>
-                    <button className="TimeLineButton" onClick={() => incrementQuestion(4)} >No</button>
+                    <div className={timeLineOffset >= 4 ? "" : "DisabledQuestionSegment"}>
+                        <p className="TimeLineQuestion">Are you or have you ever been a government official?</p>
+                        <div className="TimeLineButtonWrapper">
+                            <button className="TimeLineButton" onClick={() => incrementQuestion(4)} >Yes</button>
+                            <button className="TimeLineButton" onClick={() => incrementQuestion(4)} >No</button>
+                        </div>
                     </div>
-                    <p className="TimeLineQuestion">Do you certify that all of your responses are true?</p>
-                     <div className="TimeLineButtonWrapper">
-                    <button className="TimeLineButton" onClick={() => incrementQuestion(5)} >Yes</button>
-                    <button className="TimeLineButton" onClick={() => incrementQuestion(5)} >No</button>
+                    <div className={timeLineOffset >= 5 ? "" : "DisabledQuestionSegment"}>
+                        <p className="TimeLineQuestion">Do you certify that all of your responses are true?</p>
+                        <div className="TimeLineButtonWrapper">
+                            <button className="TimeLineButton" onClick={() => incrementQuestion(5)} >Yes</button>
+                            <button className="TimeLineButton" onClick={() => incrementQuestion(5)} >No</button>
+                        </div>
                     </div>
                 </div>
             </div>
